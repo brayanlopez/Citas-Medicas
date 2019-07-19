@@ -3,7 +3,7 @@
     Created on : 14/07/2019, 04:46:52 PM
     Author     : USUARIO PC
 --%>
-
+<%@page import="Modelo.*" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,13 +17,13 @@
         <input TYPE="submit" VALUE="Incluir Municipio">
         <button id="btnPrueba">ejecutar</button>
         <%
-            if (!request.getParameterMap().isEmpty()) {
-                String prueba = request.getParameter("prueba");
-                int var = 5;
-                out.println(var + prueba);
-                out.println(request.getParameter("btnPrueba"));
-                out.println();
-            }
+            Sede nSed = new Sede();
+            nSed.setDireccion("suba");
+            String prueba = request.getParameter("prueba");
+            int var = 5;
+            out.println(var + prueba);
+            out.println(request.getParameter("btnPrueba"));
+            out.println(nSed.getDireccion());
         %>
     </body>
 </html>

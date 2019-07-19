@@ -3,6 +3,7 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import Modelo.*;
 
 public final class Index_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -42,7 +43,7 @@ public final class Index_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
       out.write("\r\n");
-      out.write("\r\n");
+      out.write("%>\r\n");
       out.write("<!DOCTYPE html>\r\n");
       out.write("<html>\r\n");
       out.write("    <head>\r\n");
@@ -53,16 +54,18 @@ public final class Index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <div>Ejercicio de prueba</div>\r\n");
       out.write("        <input id=\"prueba\" type=text name=\"codPostal\">\r\n");
       out.write("        <div id=\"divPrueba\">resultado:</div>\r\n");
+      out.write("        <input TYPE=\"submit\" VALUE=\"Incluir Municipio\">\r\n");
       out.write("        <button id=\"btnPrueba\">ejecutar</button>\r\n");
       out.write("        ");
 
-            if (1 > 0) {
-                String prueba = request.getParameter("prueba");
-                int var = 5;
-                out.println(var + prueba);
-                out.println(request.getParameter("btnPrueba"));
-                System.out.println(!request.getParameterMap().isEmpty());
-            }
+            Sede nSed = new Sede();
+            nSed.setDireccion("suba");
+            String prueba = request.getParameter("prueba");
+            int var = 5;
+            out.println(var + prueba);
+            out.println(request.getParameter("btnPrueba"));
+            out.println(nSed.getDireccion());
+
         
       out.write("\r\n");
       out.write("    </body>\r\n");
