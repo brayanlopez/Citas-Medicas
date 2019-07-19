@@ -3,18 +3,18 @@ package Modelo;
 /**
  * @author camilo
  * @version 1.0
- * @created 19-jul.-2019 11:38:09 a. m.
+ * @created 19-jul.-2019 12:04:55 p. m.
  */
 public class Agenda {
 
-	private Cita Cita;
-	private String Estado;
-	private String Fecha;
-	private int HoraFinal;
-	private int HoraInicial;
-	private int IdAgenda;
-	private Medico Medico;
-	private TipoCita TipoCita;
+	private Cita cita;
+	private String estado;
+	private String fecha;
+	private int horafinal;
+	private int horainicial;
+	private int idagenda;
+	private Medico medico;
+	private TipoCita tipocita;
 	public TipoCita m_TipoCita;
 	public Medico m_Medico;
 	public Cita m_Cita;

@@ -3,17 +3,17 @@ package Modelo;
 /**
  * @author camilo
  * @version 1.0
- * @created 19-jul.-2019 11:38:09 a. m.
+ * @created 19-jul.-2019 12:04:55 p. m.
  */
 public class Cita {
 
-	private int Costo;
-	private String Diagnostico;
-	private String Estado;
-	private String Fecha;
-	private int IdCita;
-	private Multa Multa;
-	private String Prescripcion;
+	private int costo;
+	private String diagnostico;
+	private String estado;
+	private String fecha;
+	private int idcita;
+	private Multa multa;
+	private String prescripcion;
 	public Afiliado m_Afiliado;
 	public Multa m_Multa;
 

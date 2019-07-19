@@ -2,14 +2,14 @@ package Modelo;
 
 /**
  * @version 1.0
- * @created 19-jul.-2019 11:38:09 a. m.
+ * @created 19-jul.-2019 12:04:54 p. m.
  */
 public class Afiliado extends Usuario {
 
-	private Categoria Categoria;
-	private String Estado;
-	private String EstadoMulta;
-	private String TipoAfiliacion;
+	private Categoria categoria;
+	private String estado;
+	private String estadomulta;
+	private String tipoafiliacion;
 	public Categoria m_Categoria;
 
 	public Afiliado(){

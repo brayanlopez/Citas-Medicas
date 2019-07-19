@@ -3,13 +3,13 @@ package Modelo;
 /**
  * @author camilo
  * @version 1.0
- * @created 19-jul.-2019 11:38:10 a. m.
+ * @created 19-jul.-2019 12:04:55 p. m.
  */
 public class Multa {
 
-	private String Estado;
-	private int IdMulta;
-	private int ValorMulta;
+	private String estado;
+	private int idmulta;
+	private int valormulta;
 
 	public Multa(){
 

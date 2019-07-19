@@ -3,12 +3,12 @@ package Modelo;
 /**
  * @author camilo
  * @version 1.0
- * @created 19-jul.-2019 11:38:10 a. m.
+ * @created 19-jul.-2019 12:04:55 p. m.
  */
 public class TipoCita {
 
-	private int Duracion;
-	private int IdTipoCita;
+	private int duracion;
+	private int idtipocita;
 
 	public TipoCita(){
 

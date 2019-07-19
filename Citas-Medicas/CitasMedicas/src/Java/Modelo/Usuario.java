@@ -2,7 +2,7 @@ package Modelo;
 
 /**
  * @version 1.0
- * @created 19-jul.-2019 11:38:10 a. m.
+ * @created 19-jul.-2019 12:04:55 p. m.
  */
 public class Usuario {
 
