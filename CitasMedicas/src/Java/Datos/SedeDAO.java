@@ -1,5 +1,12 @@
 package Datos;
 
+import Modelo.Sede;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import util.CaException;
+import util.ServiceLocator;
+
 /**
  * @author camilo
  * @version 1.0
@@ -7,44 +14,69 @@ package Datos;
  */
 public class SedeDAO {
 
-	private Sede sede;
+    private Sede sede;
 
-	public SedeDAO(){
+    /*
+     * Constructor de la clase
+     */
+    public SedeDAO() {
+        sede = new Sede();
+    }
 
-	}
+    /**
+     * Incluye una nueva fila en la tabla Sede.
+     *
+     * @throws CaException
+     */
+    public void insertarSede() throws CaException {
+        try {
+            String strSQL = "INSERT INTO Sede (k_sede, n_sede, o_telefonoSede, o_direccionSede) VALUES(?,?,?,?)";
+            Connection conexion = ServiceLocator.getInstance().tomarConexion();
+            PreparedStatement prepStmt = conexion.prepareStatement(strSQL);
+            prepStmt.setLong(1, sede.getIdsede());
+            prepStmt.setString(2, sede.getNombre());
+            prepStmt.setLong(3, sede.getTelefono());
+            prepStmt.setString(4, sede.getDireccion());
+            prepStmt.executeUpdate();
+            prepStmt.close();
+            ServiceLocator.getInstance().commit();
+        } catch (SQLException e) {
+            throw new CaException("SedeDAO", "No pudo crear el municipio" + e.getMessage());
+        } finally {
+            ServiceLocator.getInstance().liberarConexion();
+        }
+    }
 
-	public void finalize() throws Throwable {
+    public void modificarSede() {
 
-	}
-	public void actualizarSede(){
+    }
 
-	}
+    public void eliminarSede() {
 
-	public void buscarSede(){
+    }
 
-	}
+    public void buscarSede() {
 
-	public void eliminarSede(){
+    }
 
-	}
+    public void actualizarSede() {
 
-	public Sede getsede(){
-		return sede;
-	}
+    }
 
-	public void insertarSede(){
+    /**
+     *
+     * @param sede
+     */
+    public void setsede(Sede sede) {
+        this.sede = sede;
+    }
 
-	}
+    public Sede getsede() {
+        return sede;
+    }
 
-	public void modificarSede(){
+    public void finalize() throws Throwable {
 
-	}
+    }
 
-	/**
-	 * 
-	 * @param newVal
-	 */
-	public void setsede(Sede newVal){
-		sede = newVal;
-	}
 }//end SedeDAO

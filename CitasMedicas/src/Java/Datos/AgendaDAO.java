@@ -1,5 +1,8 @@
 package Datos;
 
+
+import Modelo.Agenda;
+
 /**
  * @author camilo
  * @version 1.0

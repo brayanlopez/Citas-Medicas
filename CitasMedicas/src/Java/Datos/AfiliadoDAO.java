@@ -1,5 +1,7 @@
 package Datos;
 
+import Modelo.Afiliado;
+
 /**
  * @author camilo
  * @version 1.0

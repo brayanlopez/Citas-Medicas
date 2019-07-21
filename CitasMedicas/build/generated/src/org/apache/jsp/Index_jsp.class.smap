@@ -1,12 +1,12 @@
 SMAP
-Index_jsp.java
+index_jsp.java
 JSP
 *S JSP
 *F
-+ 0 Index.jsp
-Index.jsp
++ 0 index.jsp
+index.jsp
 *L
-5,15:45
-20,9:61
-28,4:70
+5,18:46
+23,2:65
+24,4:67
 *E
