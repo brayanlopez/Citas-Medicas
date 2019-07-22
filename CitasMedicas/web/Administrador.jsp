@@ -16,7 +16,9 @@
         <link type="text/css" rel="stylesheet" href="estilos.css">
     </head>
     <body>
-        <h1>Modulo para administrador</h1>
+        <header>
+            <h1>Modulo para administrador</h1>
+        </header>
         <section>
             <h2>Gestion de sedes</h2>
 
@@ -70,7 +72,10 @@
             <%
                 SedeDAO seDAO = new SedeDAO();
                 //seDAO.buscarSede();
-            %>
+%>
         </section>
+        <footer>
+
+        </footer>
     </body>
 </html>
