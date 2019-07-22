@@ -12,23 +12,17 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Menu Principal</title>
+        <link type="text/css" rel="stylesheet" href="estilos.css">
     </head>
     <body>
-        <div>Ejercicio de prueba</div>
-        <input id="prueba" type=text name="codPostal">
-        <div id="divPrueba">resultado:</div>
-        <input TYPE="submit" VALUE="Incluir Municipio">
-        <button id="btnPrueba">ejecutar</button>
-        <%
-            Sede nsed = new Sede();
-            nsed.setIdsede(1919);
-            nsed.setNombre("sede prueba");
-            nsed.setTelefono(1234567);
-            nsed.setDireccion("suba");
-
-            SedeDAO seDAO = new SedeDAO();
-            seDAO.setsede(nsed);
-            seDAO.insertarSede();
-        %>
+        <h1>Sistema gestor de citas</h1>
+        <p>
+            Bienvenido al sistema gestor de citas, a continuación encuentra tres 
+            categorias, seleccione la categoria que corresponde a el tipo de usuario 
+            que es usted.
+        </p>
+        <a href="Administrador.jsp">Administrador</a>
+        <a href="Medico.jsp">Medico</a>
+        <a href="Paciente.jsp">Paciente/afiliado</a>
     </body>
 </html>

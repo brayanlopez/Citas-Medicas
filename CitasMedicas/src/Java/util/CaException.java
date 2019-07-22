@@ -11,7 +11,6 @@ public class CaException extends Exception {
      *
      * @param error cadena que contiene la descripci�n del error.
      */
-
     public CaException(String clase, String error) {
         super(error);
         this.clase = clase;

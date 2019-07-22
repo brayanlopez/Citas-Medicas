@@ -4,11 +4,6 @@ import java.sql.Connection;
 import java.sql.*;
 import java.sql.SQLException;
 
-/**
- * Recursos Humanos
- *
- * @author Alba Consuelo Nieto
- */
 public class ServiceLocator {
 
     /**
@@ -37,7 +32,6 @@ public class ServiceLocator {
                 e.printStackTrace();
             }
         }
-
         return instance;
     }
 
@@ -48,7 +42,7 @@ public class ServiceLocator {
         try {
             // Se registra el Driver y se crea la conexion
             //String url = "jdbc:oracle:thin:@localhost:1521:xe";
-            String url = "jdbc:postgresql://localhost:5432/CitasMedicas";
+            String url = "jdbc:postgresql://localhost:5432/citasMedicas";
             String usuario = "postgres";
             String password = "postgres2019"; //Debe reemplazarse por el password en su propia instalación
             Class.forName("org.postgresql.Driver").newInstance();
@@ -72,7 +66,6 @@ public class ServiceLocator {
                 e.printStackTrace();
             }
         }
-
         conexionLibre = false;
         notify();
         return conexion;
@@ -137,5 +130,4 @@ public class ServiceLocator {
             e.printStackTrace();
         }
     }
-
 }

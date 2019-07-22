@@ -30,7 +30,7 @@ public class SedeDAO {
      */
     public void insertarSede() throws CaException {
         try {
-            String strSQL = "INSERT INTO Sede (k_sede, n_sede, o_telefonoSede, o_direccionSede) VALUES(?,?,?,?)";
+            String strSQL = "INSERT INTO \"Sede\" (k_sede, n_sede, \"o_telefonoSede\", \"o_direccionSede\") VALUES(?,?,?,?)";
             Connection conexion = ServiceLocator.getInstance().tomarConexion();
             PreparedStatement prepStmt = conexion.prepareStatement(strSQL);
             prepStmt.setLong(1, sede.getIdsede());
@@ -41,7 +41,7 @@ public class SedeDAO {
             prepStmt.close();
             ServiceLocator.getInstance().commit();
         } catch (SQLException e) {
-            throw new CaException("SedeDAO", "No pudo crear el municipio" + e.getMessage());
+            throw new CaException("SedeDAO", "No pudo crear la sede" + e.getMessage());
         } finally {
             ServiceLocator.getInstance().liberarConexion();
         }
