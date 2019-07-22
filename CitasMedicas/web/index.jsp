@@ -15,14 +15,20 @@
         <link type="text/css" rel="stylesheet" href="estilos.css">
     </head>
     <body>
-        <h1>Sistema gestor de citas</h1>
-        <p>
-            Bienvenido al sistema gestor de citas, a continuación encuentra tres 
-            categorias, seleccione la categoria que corresponde a el tipo de usuario 
-            que es usted.
-        </p>
-        <a href="Administrador.jsp">Administrador</a>
-        <a href="Medico.jsp">Medico</a>
-        <a href="Paciente.jsp">Paciente/afiliado</a>
+        <header>
+            <h1>Sistema gestor de citas</h1>
+        </header>
+        <main>
+            <section>
+                <p>
+                    Bienvenido al sistema gestor de citas, a continuación encuentra tres 
+                    categorias, seleccione la categoria que corresponde a el tipo de usuario 
+                    que es usted.
+                </p>
+                <a href="Administrador.jsp">Administrador</a><br>
+                <a href="Medico.jsp">Medico</a><br>
+                <a href="Paciente.jsp">Paciente/afiliado</a><br>
+            </section>
+        </main>        
     </body>
 </html>

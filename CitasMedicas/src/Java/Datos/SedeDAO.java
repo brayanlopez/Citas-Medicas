@@ -41,7 +41,7 @@ public class SedeDAO {
             prepStmt.close();
             ServiceLocator.getInstance().commit();
         } catch (SQLException e) {
-            throw new CaException("SedeDAO", "No pudo crear la sede" + e.getMessage());
+            throw new CaException("SedeDAO", "No pudo crear la sede " + e.getMessage());
         } finally {
             ServiceLocator.getInstance().liberarConexion();
         }

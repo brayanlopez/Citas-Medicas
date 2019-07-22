@@ -13,6 +13,13 @@
         <link type="text/css" rel="stylesheet" href="estilos.css">
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <header>
+            <h1>Modulo medico</h1>
+        </header>
+        <footer>
+            <a href="index.jsp" target="blank">Regresar</a>
+            <br>
+        </footer>
+
     </body>
 </html>

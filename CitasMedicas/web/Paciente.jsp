@@ -4,6 +4,8 @@
     Author     : USUARIO PC
 --%>
 
+<%@page import="Datos.CitaDAO"%>
+<%@page import="Modelo.Cita"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,6 +15,22 @@
         <link type="text/css" rel="stylesheet" href="estilos.css">
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <header>
+            <h1>Modulo pacientes</h1>            
+        </header>
+        <main>
+            <section id="sede">
+                <h2>Gestion de citas</h2>
+
+                <!-- Pinta la forma -->
+                <h3>Solicitar cita</h3><br>
+
+                <h3>Cancelar cita</h3><br>
+            </section>
+        </main>
+        <footer>
+            <a href="index.jsp" target="blank">Regresar</a>
+            <br>
+        </footer>
     </body>
 </html>

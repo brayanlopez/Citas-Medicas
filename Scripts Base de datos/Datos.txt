@@ -1,97 +1,93 @@
 --INSERSION DE DATOS
 
 --Datos sede
---INSERT INTO "Sede" VALUES (001,'Suba',6888029,'calle 132 # 104 - 06');
---INSERT INTO "Sede" VALUES (002, 'Usaquen', 5390794, 'calle 127 # 7 - 80');
---INSERT INTO "Sede" VALUES (003, 'Bosa', 603251, 'carrera 90 # 45 sur - 90');
---INSERT INTO "Sede" VALUES (004, 'Engativa', 2281724, 'call 64 # 88 - 24');
---INSERT INTO "Sede" VALUES (005, 'Usme', 8616594, 'carrera 14 # 71 sur - 10');
+INSERT INTO "Sede" VALUES (001,'Suba',6888029,'calle 132 # 104 - 06');
+INSERT INTO "Sede" VALUES (002, 'Usaquen', 5390794, 'calle 127 # 7 - 80');
+INSERT INTO "Sede" VALUES (003, 'Bosa', 603251, 'carrera 90 # 45 sur - 90');
+INSERT INTO "Sede" VALUES (004, 'Engativa', 2281724, 'call 64 # 88 - 24');
+INSERT INTO "Sede" VALUES (005, 'Usme', 8616594, 'carrera 14 # 71 sur - 10');
 --SELECT * FROM "Sede";
 
 --Datos consultorio
---INSERT INTO "Consultorio" VALUES (101,001);
---INSERT INTO "Consultorio" VALUES (102,001);
---INSERT INTO "Consultorio" VALUES (103,001);
---INSERT INTO "Consultorio" VALUES (104,001);
---INSERT INTO "Consultorio" VALUES (105,001);
---INSERT INTO "Consultorio" VALUES (201,002);
---INSERT INTO "Consultorio" VALUES (202,002);
---INSERT INTO "Consultorio" VALUES (203,002);
---INSERT INTO "Consultorio" VALUES (204,002);
---INSERT INTO "Consultorio" VALUES (205,002);
---INSERT INTO "Consultorio" VALUES (301,003);
---INSERT INTO "Consultorio" VALUES (302,003);
---INSERT INTO "Consultorio" VALUES (303,003);
---INSERT INTO "Consultorio" VALUES (304,003);
---INSERT INTO "Consultorio" VALUES (305,003);
---INSERT INTO "Consultorio" VALUES (401,004);
---INSERT INTO "Consultorio" VALUES (402,004);
---INSERT INTO "Consultorio" VALUES (403,004);
---INSERT INTO "Consultorio" VALUES (404,004);
---INSERT INTO "Consultorio" VALUES (405,004);
---INSERT INTO "Consultorio" VALUES (501,005);
---INSERT INTO "Consultorio" VALUES (502,005);
---INSERT INTO "Consultorio" VALUES (503,005);
---INSERT INTO "Consultorio" VALUES (504,005);
---INSERT INTO "Consultorio" VALUES (505,005);
+INSERT INTO "Consultorio" VALUES (101,001);
+INSERT INTO "Consultorio" VALUES (102,001);
+INSERT INTO "Consultorio" VALUES (103,001);
+INSERT INTO "Consultorio" VALUES (104,001);
+INSERT INTO "Consultorio" VALUES (105,001);
+INSERT INTO "Consultorio" VALUES (201,002);
+INSERT INTO "Consultorio" VALUES (202,002);
+INSERT INTO "Consultorio" VALUES (203,002);
+INSERT INTO "Consultorio" VALUES (204,002);
+INSERT INTO "Consultorio" VALUES (205,002);
+INSERT INTO "Consultorio" VALUES (301,003);
+INSERT INTO "Consultorio" VALUES (302,003);
+INSERT INTO "Consultorio" VALUES (303,003);
+INSERT INTO "Consultorio" VALUES (304,003);
+INSERT INTO "Consultorio" VALUES (305,003);
+INSERT INTO "Consultorio" VALUES (401,004);
+INSERT INTO "Consultorio" VALUES (402,004);
+INSERT INTO "Consultorio" VALUES (403,004);
+INSERT INTO "Consultorio" VALUES (404,004);
+INSERT INTO "Consultorio" VALUES (405,004);
+INSERT INTO "Consultorio" VALUES (501,005);
+INSERT INTO "Consultorio" VALUES (502,005);
+INSERT INTO "Consultorio" VALUES (503,005);
+INSERT INTO "Consultorio" VALUES (504,005);
+INSERT INTO "Consultorio" VALUES (505,005);
 --SELECT * FROM "Consultorio";
 
 --Datos especialidad
 --MEDICINA GENERAL, PEDIATRIA, Oftalmologia, Odontologia.
-/*INSERT INTO "Especialidad" VALUES (001, 'Medicina General');
+INSERT INTO "Especialidad" VALUES (001, 'Medicina General');
 INSERT INTO "Especialidad" VALUES (002, 'Pediatria');
 INSERT INTO "Especialidad" VALUES (003, 'Oftalmologia');
 INSERT INTO "Especialidad" VALUES (004, 'Odontologia');
 INSERT INTO "Especialidad" VALUES (005, 'Cardiologia');
 
 SELECT * FROM "Especialidad";
-*/
+
 
 --Datos tipo cita
 --Prioritaria=11, Primera vez=12, Lectura examenes=13, Control=14.
-/*INSERT INTO "Tipo_cita" VALUES (11,20);
+INSERT INTO "Tipo_cita" VALUES (11,20);
 INSERT INTO "Tipo_cita" VALUES (12,25);
 INSERT INTO "Tipo_cita" VALUES (13,15);
 INSERT INTO "Tipo_cita" VALUES (14,20);
-*/
+
 --SELECT * FROM "Tipo_cita";
 
 --Datos Usuario
---INSERT INTO "Usuario" VALUES (1018505861, 'Cedula Ciudadania', 'Camilo', 'Niño', '1998-09-26', 'cricaniri_98@hotmail.com', 'M', 6971133, 6888095);
---INSERT INTO "Usuario" VALUES (1026645874, 'Cedula Ciudadania', 'Carolina', 'Rincon', '1988-09-18', 'carola1888@hotmail.com', 'F', 6897456, 4789547);
---INSERT INTO "Usuario" VALUES (1233914068, 'Cedula Ciudadania', 'Maria', 'Moreno', '1999-12-18', 'mafe1218@hotmail.com', 'F', 5896347, 31025478);
---INSERT INTO "Usuario" VALUES (79915910, 'Cedula Ciudadania', 'Jose', 'Sepulveda', '1996-03-13', 'jose123@hotmail.com', 'M', 692283, 360808);
---INSERT INTO "Usuario" VALUES (35316971, 'Cedula Ciudadania', 'Juan', 'Soto', '1978-11-20', 'soto1120@hotmail.com', 'M', 316339, 387845);
---INSERT INTO "Usuario" VALUES (9519799, 'Cedula Ciudadania', 'David', 'Lopez', '1986-06-16', 'david1986@hotmail.com', 'M', 311258, 319647);
---INSERT INTO "Usuario" VALUES (1019847589, 'Cedula Ciudadania', 'Camila', 'Ramirez', '2000-08-06', 'arcila99@hotmail.com', 'F', 456789, 784512);
---INSERT INTO "Usuario" VALUES (1020635874, 'Cedula Ciudadania', 'Valentina', 'Beltran', '1997-10-19', 'vabel19@hotmail.com', 'F', 320145, 326598);
---INSERT INTO "Usuario" VALUES (78945687, 'Cedula Ciudadania', 'Gabriela', 'Suarez', '1968-01-15', 'gabi2018@hotmail.com', 'F', 987412, 305689);
---INSERT INTO "Usuario" VALUES (78451256, 'Cedula Ciudadania', 'Carlos', 'Alape', '1970-10-30', 'carlospe1@hotmail.com', 'M', 452137, 313985);
---INSERT INTO "Usuario" VALUES (990313125, 'Tarjeta Identidad', 'Leonardo', 'Melo', '2005-07-21', 'leoncio78@hotmail.com', 'M', 687452, 679452);
---INSERT INTO "Usuario" VALUES (1000002458, 'Cedula Extranjeria', 'Natalia', 'Idalgo', '1991-05-02', 'natis15@hotmail.com', 'F', 789451, 478513);
---INSERT INTO "Usuario" VALUES (1018505789, 'Tarjeta Identidad', 'Alejandra', 'Gomez', '2010-04-29', 'alegomez12@hotmail.com', 'F', 333546, 335810);
---INSERT INTO "Usuario" VALUES (1017555871, 'Cedula Extranjeria', 'Natalia', 'Cruz', '1993-01-26', 'cruz66@hotmail.com', 'F', 607853, 603251);
---INSERT INTO "Usuario" VALUES (980924784, 'Tarjeta Identidad', 'Manuel', 'Tole', '2006-12-26', 'cmanuel9@hotmail.com', 'M', 102668, 314002);
---INSERT INTO "Usuario" VALUES (123388974, 'Cedula Ciudadania', 'Humberto', 'Castro', '1889-12-10', 'hc789@hotmail.com', 'M', 1772668, 3314002);
---INSERT INTO "Usuario" VALUES (970313191, 'Tarjeta Identidad', 'Charol', 'Sepulveda', '2004-02-26', 'charolzzz@hotmail.com', 'F', 1202668, 3314002);
---INSERT INTO "Usuario" VALUES (123388453, 'Cedula Ciudadania', 'Ronal', 'Ceballos', '1976-05-27', 'ronal789@hotmail.com', 'M', 1042668, 3185002);
---INSERT INTO "Usuario" VALUES (871228746, 'Tarjeta Identidad', 'Jose', 'Torres', '2007-11-26', 'Josesito1@hotmail.com', 'M', 1026680, 3140020);
---INSERT INTO "Usuario" VALUES (78945613, 'Cedula Ciudadania', 'Juaquin', 'Rodrigues', '1880-12-24', 'juaco24@hotmail.com', 'M', 1026687, 3140902);
+INSERT INTO "Usuario" VALUES (1018505861, 'Cedula Ciudadania', 'Camilo', 'Niño', '1998-09-26', 'cricaniri_98@hotmail.com', 'M', 6971133, 6888095);
+INSERT INTO "Usuario" VALUES (1026645874, 'Cedula Ciudadania', 'Carolina', 'Rincon', '1988-09-18', 'carola1888@hotmail.com', 'F', 6897456, 4789547);
+INSERT INTO "Usuario" VALUES (1233914068, 'Cedula Ciudadania', 'Maria', 'Moreno', '1999-12-18', 'mafe1218@hotmail.com', 'F', 5896347, 31025478);
+INSERT INTO "Usuario" VALUES (79915910, 'Cedula Ciudadania', 'Jose', 'Sepulveda', '1996-03-13', 'jose123@hotmail.com', 'M', 692283, 360808);
+INSERT INTO "Usuario" VALUES (35316971, 'Cedula Ciudadania', 'Juan', 'Soto', '1978-11-20', 'soto1120@hotmail.com', 'M', 316339, 387845);
+INSERT INTO "Usuario" VALUES (9519799, 'Cedula Ciudadania', 'David', 'Lopez', '1986-06-16', 'david1986@hotmail.com', 'M', 311258, 319647);
+INSERT INTO "Usuario" VALUES (1019847589, 'Cedula Ciudadania', 'Camila', 'Ramirez', '2000-08-06', 'arcila99@hotmail.com', 'F', 456789, 784512);
+INSERT INTO "Usuario" VALUES (1020635874, 'Cedula Ciudadania', 'Valentina', 'Beltran', '1997-10-19', 'vabel19@hotmail.com', 'F', 320145, 326598);
+INSERT INTO "Usuario" VALUES (78945687, 'Cedula Ciudadania', 'Gabriela', 'Suarez', '1968-01-15', 'gabi2018@hotmail.com', 'F', 987412, 305689);
+INSERT INTO "Usuario" VALUES (78451256, 'Cedula Ciudadania', 'Carlos', 'Alape', '1970-10-30', 'carlospe1@hotmail.com', 'M', 452137, 313985);
+INSERT INTO "Usuario" VALUES (990313125, 'Tarjeta Identidad', 'Leonardo', 'Melo', '2005-07-21', 'leoncio78@hotmail.com', 'M', 687452, 679452);
+INSERT INTO "Usuario" VALUES (1000002458, 'Cedula Extranjeria', 'Natalia', 'Idalgo', '1991-05-02', 'natis15@hotmail.com', 'F', 789451, 478513);
+INSERT INTO "Usuario" VALUES (1018505789, 'Tarjeta Identidad', 'Alejandra', 'Gomez', '2010-04-29', 'alegomez12@hotmail.com', 'F', 333546, 335810);
+INSERT INTO "Usuario" VALUES (1017555871, 'Cedula Extranjeria', 'Natalia', 'Cruz', '1993-01-26', 'cruz66@hotmail.com', 'F', 607853, 603251);
+INSERT INTO "Usuario" VALUES (980924784, 'Tarjeta Identidad', 'Manuel', 'Tole', '2006-12-26', 'cmanuel9@hotmail.com', 'M', 102668, 314002);
+INSERT INTO "Usuario" VALUES (123388974, 'Cedula Ciudadania', 'Humberto', 'Castro', '1889-12-10', 'hc789@hotmail.com', 'M', 1772668, 3314002);
+INSERT INTO "Usuario" VALUES (970313191, 'Tarjeta Identidad', 'Charol', 'Sepulveda', '2004-02-26', 'charolzzz@hotmail.com', 'F', 1202668, 3314002);
+INSERT INTO "Usuario" VALUES (123388453, 'Cedula Ciudadania', 'Ronal', 'Ceballos', '1976-05-27', 'ronal789@hotmail.com', 'M', 1042668, 3185002);
+INSERT INTO "Usuario" VALUES (871228746, 'Tarjeta Identidad', 'Jose', 'Torres', '2007-11-26', 'Josesito1@hotmail.com', 'M', 1026680, 3140020);
+INSERT INTO "Usuario" VALUES (78945613, 'Cedula Ciudadania', 'Juaquin', 'Rodrigues', '1880-12-24', 'juaco24@hotmail.com', 'M', 1026687, 3140902);
 --SELECT * FROM "Usuario";
 
 --Datos Medicos
---INSERT INTO "Medico" VALUES (1018505861,10002843,001,101,6.2); 
---INSERT INTO "Medico" VALUES (1026645874,10002844,001,101,2.8); 
---INSERT INTO "Medico" VALUES (1233914068,10002844,002,201,6.2); 
---INSERT INTO "Medico" VALUES (79915910,10002846,002,201,2.8); 
---INSERT INTO "Medico" VALUES (35316971,10002846,003,301,6.2); 
---INSERT INTO "Medico" VALUES (9519799,10002847,003,301,2.8); 
---INSERT INTO "Medico" VALUES (1019847589,10002848,004,401,6.2); 
---INSERT INTO "Medico" VALUES (1020635874,10002849,004,401,2.8); 
---INSERT INTO "Medico" VALUES (78945687,10002850,005,501,6.2); 
---INSERT INTO "Medico" VALUES (78451256,10002851,005,501,2.8); 
+INSERT INTO "Medico" VALUES (1018505861,10002843,001,101,6.2); 
+INSERT INTO "Medico" VALUES (1026645874,10002844,001,101,2.8); 
+INSERT INTO "Medico" VALUES (1233914068,10002844,002,201,6.2); 
+INSERT INTO "Medico" VALUES (79915910,10002846,002,201,2.8); 
+INSERT INTO "Medico" VALUES (35316971,10002846,003,301,6.2); 
+INSERT INTO "Medico" VALUES (9519799,10002847,003,301,2.8); 
+INSERT INTO "Medico" VALUES (1019847589,10002848,004,401,6.2); 
+INSERT INTO "Medico" VALUES (1020635874,10002849,004,401,2.8); 
+INSERT INTO "Medico" VALUES (78945687,10002850,005,501,6.2); 
+INSERT INTO "Medico" VALUES (78451256,10002851,005,501,2.8); 
 --SELECT * FROM "Medico";
-
-
-
-
